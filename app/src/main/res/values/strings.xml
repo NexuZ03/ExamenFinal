@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ExamenFinal</string>
+    <string name="user">Ingresar Usuario</string>
+    <string name="password">Ingrese Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="Registrar">Has olvidado tu contraseña?</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
 </resources>
