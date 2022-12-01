@@ -29,8 +29,8 @@ public class MenuInicio extends AppCompatActivity {
         buttonBuscarEnvios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MenuInicio.this, Historial_de_Pedididos.class);
-                startActivity(i);
+                Intent a = new Intent(MenuInicio.this, BusquedaDePedidos.class);
+                startActivity(a);
             }
         });
         buttonCEProvincias=(Button) findViewById(R.id.buttonCEProvincias);

@@ -49,13 +49,13 @@ public class cotizacion_de_envios extends AppCompatActivity {
 
         spinner_depa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
 
                 if (position==0){
-                    arrayAdapter_regi=new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,arrayList_puno)
+                    arrayAdapter_regi=new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,arrayList_puno);
                 }
                 if (position==1){
-                    arrayAdapter_regi=new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,arrayList_huancayo)
+                    arrayAdapter_regi=new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,arrayList_huancayo);
                 }
 
                 spinner_regi.setAdapter(arrayAdapter_regi);

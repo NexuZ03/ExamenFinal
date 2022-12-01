@@ -12,6 +12,10 @@
     <string name="RegistrarEnvios">Registar Envíos</string>
     <string name="BuscarEnvios">Buscar Enviós</string>
     <string name="HistorialEnvios">Historial de envíos</string>
-    <string name="cotizacion_de_envios_a_provincias">Cotizacion de envios a provincias</string>
-    <string name="_1_a_donde_lo_llevamos">1.-¿A donde lo llevamos?</string>
+
+    <string name="BusquedaID">Busqueda de Pedidos</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="busqueda_de_envios">Busqueda de Envios</string>
+    <string name="EliminarEnvios">Eliminar</string>
+
 </resources>
