@@ -25,36 +25,35 @@ public class cotizacion_de_envios extends AppCompatActivity {
 
 
     private EditText pesos;
-    private TextView resul;
-
+    private TextView resultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cotizacion_de_envios);
 
-        pesos=(EditText)findViewById(R.id.peso);
-        resul=(TextView)findViewById(R.id.resul);
 
+        pesos = (EditText) findViewById(R.id.peso);
+        resultado = (TextView) findViewById(R.id.resul);
 
         //departamentos
         spinner_depa = (Spinner) findViewById(R.id.spinner_depa);
         spinner_regi = (Spinner) findViewById(R.id.spinner_regi);
 
-        arrayList_depa=new ArrayList<>();
+        arrayList_depa = new ArrayList<>();
         arrayList_depa.add("Puno");
         arrayList_depa.add("Huancayo");
 
-        arrayAdapter_depa=new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item,arrayList_depa);
+        arrayAdapter_depa = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_depa);
         spinner_depa.setAdapter(arrayAdapter_depa);
 
         //regiones
-        arrayList_puno=new ArrayList<>();
+        arrayList_puno = new ArrayList<>();
         arrayList_puno.add("Lampa");
         arrayList_puno.add("Carabaya");
         arrayList_puno.add("Chucuito");
 
-        arrayList_huancayo=new ArrayList<>();
+        arrayList_huancayo = new ArrayList<>();
         arrayList_huancayo.add("Satipo");
         arrayList_huancayo.add("Jauja");
         arrayList_huancayo.add("Tarma");
@@ -63,13 +62,15 @@ public class cotizacion_de_envios extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
 
-                if (position==0){
-                    arrayAdapter_regi=new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,arrayList_puno);
-                    valordepa=2.00;
+                if (position == 0) {
+                    arrayAdapter_regi = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_puno);
+                    valordepa=3.0;
+
                 }
-                if (position==1){
-                    arrayAdapter_regi=new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,arrayList_huancayo);
-                    valordepa=3.00;
+                if (position == 1) {
+                    arrayAdapter_regi = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList_huancayo);
+                    valordepa=5.0;
+
                 }
 
                 spinner_regi.setAdapter(arrayAdapter_regi);
@@ -82,26 +83,19 @@ public class cotizacion_de_envios extends AppCompatActivity {
         });
 
 
-
-
-
-
-
     }
-
     public void estimar (View view) {
         String peso_String = pesos.getText().toString();
         int peso_int=Integer.parseInt(peso_String);
         if(peso_int>=0 && peso_int<=5){
-            pesito=3.0;
-        }
-        if(peso_int>6 && peso_int<=10){
-            pesito=5.0;
+            pesito=3.00;
+            resultado.setText("S/."+(5.0+pesito+valordepa));
         }
         else {
             pesito=10.0;
+            resultado.setText("S/."+(5.0+pesito+valordepa));
+
         }
-        Double  total=(5.0+pesito+valordepa);
 
 
     }
