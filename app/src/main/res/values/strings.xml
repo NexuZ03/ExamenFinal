@@ -12,4 +12,8 @@
     <string name="RegistrarEnvios">Registar Envíos</string>
     <string name="BuscarEnvios">Buscar Enviós</string>
     <string name="HistorialEnvios">Historial de envíos</string>
+    <string name="BusquedaID">Busqueda de Pedidos</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="busqueda_de_envios">Busqueda de Envios</string>
+    <string name="EliminarEnvios">Eliminar</string>
 </resources>

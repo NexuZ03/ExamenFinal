@@ -4,4 +4,6 @@
     <string name="CotizacionEProvincias">Cotización envios a Provincias</string>
     <string name="RegistrarEnvios">Registar Envíos</string>
     <string name="BuscarEnvios">Buscar Enviós</string>
+    <string name="BusquedaID">Busqueda de Pedidos</string>
+    <string name="EliminarEnvios">Eliminar</string>
 </resources>
