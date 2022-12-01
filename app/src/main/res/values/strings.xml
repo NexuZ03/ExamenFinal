@@ -7,4 +7,9 @@
     <string name="todo">TODO</string>
     <string name="todo1">TODO</string>
     <string name="contraseña">Ingresar Contraseña</string>
+    <string name="CotizacionELocales">Cotización de envios locales</string>
+    <string name="CotizacionEProvincias">Cotización envios a Provincias</string>
+    <string name="RegistrarEnvios">Registar Envíos</string>
+    <string name="BuscarEnvios">Buscar Enviós</string>
+    <string name="HistorialEnvios">Historial de envíos</string>
 </resources>

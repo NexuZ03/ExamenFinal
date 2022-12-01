@@ -87,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:backgroundTint="#00FFFFFF"
             app:srcCompat="@drawable/facebook"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -95,6 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:backgroundTint="#00FFFFFF"
             app:srcCompat="@drawable/google"
             tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
     </LinearLayout>

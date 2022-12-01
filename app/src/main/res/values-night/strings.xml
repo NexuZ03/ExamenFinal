@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CotizacionELocales">Cotización de envios locales</string>
+    <string name="CotizacionEProvincias">Cotización envios a Provincias</string>
+    <string name="RegistrarEnvios">Registar Envíos</string>
+    <string name="BuscarEnvios">Buscar Enviós</string>
+</resources>
