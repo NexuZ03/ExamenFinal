@@ -29,7 +29,7 @@ public class MenuInicio extends AppCompatActivity {
         buttonBuscarEnvios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MenuInicio.this, BusquedaDePedidos.class);
+                Intent a = new Intent(MenuInicio.this, Buscar_Envios.class);
                 startActivity(a);
             }
         });
@@ -37,8 +37,8 @@ public class MenuInicio extends AppCompatActivity {
         buttonCEProvincias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MenuInicio.this, cotizacion_de_envios.class);
-                startActivity(i);
+                Intent f = new Intent(MenuInicio.this, cotizacion_de_envios.class);
+                startActivity(f);
             }
         });
 
