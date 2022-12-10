@@ -20,13 +20,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".cotizacion_de_envios"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".MenuInicio"
             android:exported="false">
             <meta-data
