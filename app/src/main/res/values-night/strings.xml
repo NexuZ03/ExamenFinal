@@ -6,4 +6,9 @@
     <string name="BuscarEnvios">Buscar Enviós</string>
     <string name="BusquedaID">Busqueda de Pedidos</string>
     <string name="EliminarEnvios">Eliminar</string>
+    <string name="estimar">Estimar</string>
+    <string name="Alto">Ingresar el Alto</string>
+    <string name="Largo">Ingresar el Largo</string>
+    <string name="Ancho">Ingresar el Ancho</string>
+    <string name="peso">Ingresar el Peso</string>
 </resources>

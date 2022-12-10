@@ -17,5 +17,16 @@
     <string name="eliminar">Eliminar</string>
     <string name="busqueda_de_envios">Busqueda de Envios</string>
     <string name="EliminarEnvios">Eliminar</string>
+    <string name="estimar">Estimar</string>
+    <string name="Alto">Ingresar el Alto</string>
+    <string name="Largo">Ingresar el Largo</string>
+    <string name="Ancho">Ingresar el Ancho</string>
+    <string name="peso">Ingresar el Peso</string>
+    <string name="sobres">Sobres</string>
+    <string name="_2_que_envias">2.- ¿Que envias?</string>
+    <string name="cajas">Cajas</string>
+    <string name="cotizacion_de_envios_a_provincias">Cotizacion de Envios a Provincias</string>
+    <string name="_1_a_donde_lo_llevaremos">1.- ¿A donde lo llevaremos?</string>
+    <string name="_3_cuanto_pesa">3.- ¿Cuanto Pesa?</string>
 
 </resources>

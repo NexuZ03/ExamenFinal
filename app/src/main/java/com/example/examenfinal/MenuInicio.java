@@ -11,7 +11,7 @@ public class MenuInicio extends AppCompatActivity {
 
     Button buttonHistorialEnvios;
     Button buttonBuscarEnvios;
-
+    Button buttonCEProvincias;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,5 +33,13 @@ public class MenuInicio extends AppCompatActivity {
             }
         });
 
+        buttonCEProvincias=(Button) findViewById(R.id.buttonCEProvincias);
+        buttonCEProvincias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e = new Intent(MenuInicio.this, Cotizador_de_Envios.class);
+                startActivity(e);
+            }
+        });
     }
 }
