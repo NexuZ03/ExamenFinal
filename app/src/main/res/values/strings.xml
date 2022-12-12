@@ -28,5 +28,9 @@
     <string name="cotizacion_de_envios_a_provincias">Cotizacion de Envios a Provincias</string>
     <string name="_1_a_donde_lo_llevaremos">1.- ¿A donde lo llevaremos?</string>
     <string name="_3_cuanto_pesa">3.- ¿Cuanto Pesa?</string>
-
+    <string name="ReistrarInfo">Registrar</string>
+    <string-array name="lista">
+        <item>KILOGRAMOS (KG)</item>
+        <item>GRAMOS (GR)</item>
+    </string-array>
 </resources>

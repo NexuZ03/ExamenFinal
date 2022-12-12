@@ -12,6 +12,7 @@ public class MenuInicio extends AppCompatActivity {
     Button buttonHistorialEnvios;
     Button buttonBuscarEnvios;
     Button buttonCEProvincias;
+    Button buttonRegistrarEnvios;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,14 @@ public class MenuInicio extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent e = new Intent(MenuInicio.this, Cotizador_de_Envios.class);
+                startActivity(e);
+            }
+        });
+        buttonRegistrarEnvios=(Button) findViewById(R.id.buttonRegistrarEnvios);
+        buttonRegistrarEnvios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e = new Intent(MenuInicio.this, RegistrarEnvios.class);
                 startActivity(e);
             }
         });

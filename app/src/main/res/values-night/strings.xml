@@ -11,4 +11,5 @@
     <string name="Largo">Ingresar el Largo</string>
     <string name="Ancho">Ingresar el Ancho</string>
     <string name="peso">Ingresar el Peso</string>
+    <string name="ReistrarInfo">Registrar</string>
 </resources>

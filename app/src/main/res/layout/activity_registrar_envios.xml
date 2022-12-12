@@ -4,51 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cotizacion_Envios">
+    tools:context=".RegistrarEnvios">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/TextoTitulo1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="@string/cotizacion_de_envios_a_provincias"
-        android:textSize="20sp"
+        android:text="Cotizacion de Envios a Provincias"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/textViewP1"
+        android:id="@+id/PrimeraPregunta1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="left"
-        android:text="@string/_1_a_donde_lo_llevaremos"
+        android:text="1.- ¿A donde lo llevaremos?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/TextoTitulo1"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayoutCuadro1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_weight="20"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP1">
+        app:layout_constraintTop_toBottomOf="@+id/PrimeraPregunta1">
 
         <Spinner
-            android:id="@+id/spinner_Departamento"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-        <Spinner
-            android:id="@+id/spinner_Provincia"
+            android:id="@+id/spDepartamento15"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_margin="5dp"
@@ -56,7 +48,15 @@
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <Spinner
-            android:id="@+id/spinner_Distrito"
+            android:id="@+id/spProvincia1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spDistrito1"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_margin="5dp"
@@ -65,18 +65,18 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewP2"
+        android:id="@+id/SegundaPregunta2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="left"
-        android:text="@string/_2_que_envias"
+        android:text="2.- ¿Que envias?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCuadro1" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayoutCuadro2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
@@ -84,38 +84,38 @@
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP2">
+        app:layout_constraintTop_toBottomOf="@+id/SegundaPregunta2">
 
         <CheckBox
-            android:id="@+id/checkBoxSobre"
+            android:id="@+id/siSobres1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/sobres"
+            android:hint="Sobres"
             app:buttonIcon="@drawable/sobre" />
 
         <CheckBox
-            android:id="@+id/checkBoxCaja"
+            android:id="@+id/siCajas1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/cajas"
+            android:hint="Cajas"
             app:buttonIcon="@drawable/abrircaja" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewP3"
+        android:id="@+id/TerceraPregunta3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:gravity="left"
-        android:text="@string/_3_cuanto_pesa"
+        android:text="3.- ¿Cuanto Pesa?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCuadro2" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayoutCuadro3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -126,10 +126,10 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP3">
+        app:layout_constraintTop_toBottomOf="@+id/TerceraPregunta3">
 
         <EditText
-            android:id="@+id/editTextIPeso"
+            android:id="@+id/editTextTextPersonName1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/edt_style"
@@ -137,31 +137,40 @@
             android:ems="10"
             android:hint="@string/peso"
             android:textColor="@color/black"
-            android:textColorHint="#757575"
-            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-            android:autofillHints="" />
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textViewP4"
+            android:id="@+id/TipodePeso1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="GRAMOS (gr)"
-            android:textSize="30sp" />
+            android:visibility="visible"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/spPesos151"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textViewP5"
+        android:id="@+id/CuartaPregunta4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="4._ ¿Y cuánto mide?"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCuadro3" />
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/linearLayoutCuadro4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -170,105 +179,83 @@
         android:layout_weight="20"
         android:gravity="center"
         android:orientation="horizontal"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewP5"
+        app:layout_constraintTop_toBottomOf="@+id/CuartaPregunta4"
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageViewcaja1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/ancho"
-            tools:ignore="ImageContrastCheck" />
+            app:srcCompat="@drawable/ancho" />
 
         <ImageView
-            android:id="@+id/imageViewLARGO"
+            android:id="@+id/imageViewcaja2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/largo"
-            tools:ignore="ImageContrastCheck"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/largo" />
 
         <ImageView
-            android:id="@+id/imageViewALTO"
+            android:id="@+id/imageViewcaja3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/alto"
-            tools:ignore="ImageContrastCheck" />
+            app:srcCompat="@drawable/alto" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout5"
+        android:id="@+id/linearLayoutCuadro5"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_weight="10"
         android:gravity="center"
         android:orientation="horizontal"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCuadro4">
 
         <EditText
-            android:id="@+id/editTextANCGO"
+            android:id="@+id/editTextAncho"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/Ancho"
+            android:hint="@string/Ancho"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editTextLARGO"
+            android:id="@+id/editTextLargo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/Largo"
+            android:hint="@string/Largo"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editTextALTO"
+            android:id="@+id/editTextAlto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/Alto"
+            android:hint="@string/Alto"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewP6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:text="6.- PRECIO ESTIMADO:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:text="S/.00"
-        app:layout_constraintStart_toEndOf="@+id/textViewP6"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginLeft="105dp"
@@ -277,11 +264,9 @@
         android:layout_marginRight="105dp"
         android:layout_weight="10"
         android:background="@drawable/btn_style"
-        android:text="@string/estimar"
+        android:text="@string/ReistrarInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCuadro5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
