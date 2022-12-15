@@ -9,11 +9,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.util.List;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class MenuInicio extends AppCompatActivity {
@@ -73,10 +76,45 @@ public class MenuInicio extends AppCompatActivity {
         });
 
         recyclerView=findViewById(R.id.listar);
+        layoutManager=new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        searchView=findViewById(R.id.sc);
+        recyclerView.setHasFixedSize(true);
+        fetchHistorial("peru","");
 
     }
 
+    private void fetchHistorial(String type, String key) {
+        apiConfig = ApiCliente.getCliente().create(ApiConfig.class);
+        Call<List<Historial_de_Envios>> call = apiConfig.getContact(type, key);
+        call.enqueue(new Callback<List<Historial_de_Envios>>() {
+            @Override
+            public void onResponse(Call<List<Historial_de_Envios>> call, Response<List<Historial_de_Envios>> response) {
+                historial_de_envios = response.body();
+                adaptador_historial_envios = new Adaptador_Historial_Envios(historial_de_envios, MenuInicio.this);
+                recyclerView.setAdapter(adaptador_historial_envios);
+            }
+
+            @Override
+            public void onFailure(Call<List<Historial_de_Envios>> call, Throwable t) {
+                Toast.makeText(MenuInicio.this, "error", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                fetchHistorial("peru", query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                fetchHistorial("peru", newText);
+                return false;
+            }
+        });
 
 
-
+    }
 }
