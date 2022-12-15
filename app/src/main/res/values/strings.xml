@@ -29,6 +29,7 @@
     <string name="_1_a_donde_lo_llevaremos">1.- ¿A donde lo llevaremos?</string>
     <string name="_3_cuanto_pesa">3.- ¿Cuanto Pesa?</string>
     <string name="ReistrarInfo">Registrar</string>
+    <string name="listar_por_usuarios">Listar por Usuarios</string>
     <string-array name="lista">
         <item>KILOGRAMOS (KG)</item>
         <item>GRAMOS (GR)</item>

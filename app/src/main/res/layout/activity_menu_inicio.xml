@@ -17,9 +17,11 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
 
     <LinearLayout
+        android:id="@+id/linearLayoutMargenEdt"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="20"
@@ -32,18 +34,19 @@
 
         <Button
             android:id="@+id/buttonCEProvincias"
-            android:layout_width="250dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginLeft="105dp"
             android:layout_marginTop="8dp"
             android:layout_marginRight="105dp"
             android:layout_weight="13"
-            android:text="@string/CotizacionEProvincias" />
+            android:text="@string/CotizacionEProvincias"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/buttonRegistrarEnvios"
-            android:layout_width="250dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginLeft="105dp"
             android:layout_marginTop="8dp"
             android:layout_marginRight="105dp"
@@ -53,8 +56,8 @@
 
         <Button
             android:id="@+id/buttonBuscarEnvios"
-            android:layout_width="250dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginLeft="105dp"
             android:layout_marginTop="8dp"
             android:layout_marginRight="105dp"
@@ -64,8 +67,8 @@
 
         <Button
             android:id="@+id/buttonHistorialEnvios"
-            android:layout_width="250dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_marginLeft="105dp"
             android:layout_marginTop="8dp"
             android:layout_marginRight="105dp"
