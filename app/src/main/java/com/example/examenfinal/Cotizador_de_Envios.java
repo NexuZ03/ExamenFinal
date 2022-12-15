@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class Cotizador_de_Envios extends AppCompatActivity {
 
-    Spinner spDepartametno, spPesos15;
+    Spinner spDepartametno, spProvincia, spDistrito, spPesos15;
     CheckBox siSobres, siCajas;
     LinearLayout linearLayoutMarco5, linearLayoutMarco4;
     TextView CuartaPregunta, TipodePeso;
@@ -27,6 +27,8 @@ public class Cotizador_de_Envios extends AppCompatActivity {
         setContentView(R.layout.activity_cotizador_de_envios);
 
         spDepartametno = (Spinner)findViewById(R.id.spDepartametno);
+        spProvincia = (Spinner)findViewById((R.id.spProvincia));
+        spDistrito=(Spinner)findViewById(R.id.spDistrito);
         spPesos15 = (Spinner)findViewById(R.id.spPesos15);
         siSobres = findViewById(R.id.siSobres);
         siCajas = findViewById(R.id.siCajas);
@@ -37,6 +39,13 @@ public class Cotizador_de_Envios extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.lista, android.R.layout.simple_list_item_1);
         spPesos15.setAdapter(adapter);
+
+        ArrayAdapter<CharSequence> adapter1= ArrayAdapter.createFromResource(this,R.array.lista1, android.R.layout.simple_list_item_1);
+        spDepartametno.setAdapter(adapter1);
+        ArrayAdapter<CharSequence> adapter2= ArrayAdapter.createFromResource(this,R.array.lista2, android.R.layout.simple_list_item_1);
+        spProvincia.setAdapter(adapter2);
+        ArrayAdapter<CharSequence> adapter3= ArrayAdapter.createFromResource(this,R.array.lista3, android.R.layout.simple_list_item_1);
+        spDistrito.setAdapter(adapter3);
 
         siCajas.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

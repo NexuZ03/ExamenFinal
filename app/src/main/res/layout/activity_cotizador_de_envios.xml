@@ -230,6 +230,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/Ancho"
+            android:textAlignment="center"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
@@ -240,6 +241,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/Largo"
+            android:textAlignment="center"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
@@ -250,6 +252,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/Alto"
+            android:textAlignment="center"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
